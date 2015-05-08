@@ -15,15 +15,6 @@ public class Produto {
     private String price;
     private String description;
     private String image;
-    private String quantify;
-
-    public String getQuantify() {
-        return quantify;
-    }
-
-    public void setQuantify(String quantify) {
-        this.quantify = quantify;
-    }
 
     public String getImage() {
         return image;

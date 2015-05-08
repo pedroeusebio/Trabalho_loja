@@ -22,9 +22,11 @@ public class Contralador extends HttpServlet {
         TratadorDePaginas tratador;
         try {
             String nomeDoTratadorDePagina = request.getParameter("Controlador");
+            System.out.println("aqui1");
             System.out.println(nomeDoTratadorDePagina);
             tratador = (TratadorDePaginas) Class.forName(nomeDoTratadorDePagina).newInstance();
             String nomeDaPaginaDeResposta = tratador.processar(request, response);
+            System.out.println("aqui2");
             System.out.println(nomeDaPaginaDeResposta);
             request.getRequestDispatcher(nomeDaPaginaDeResposta).forward(request, response);
         } catch (Exception e) {

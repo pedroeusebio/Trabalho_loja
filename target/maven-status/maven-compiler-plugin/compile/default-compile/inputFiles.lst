@@ -1,4 +1,6 @@
 /home/pedroeusebio/NetBeansProjects/Trabalho-loja/src/main/java/MVC/Produto.java
 /home/pedroeusebio/NetBeansProjects/Trabalho-loja/src/main/java/MVC/TratadorDePaginas.java
 /home/pedroeusebio/NetBeansProjects/Trabalho-loja/src/main/java/MVC/pagehandlers/index_Handler.java
+/home/pedroeusebio/NetBeansProjects/Trabalho-loja/src/main/java/MVC/pagehandlers/description_Handler.java
+/home/pedroeusebio/NetBeansProjects/Trabalho-loja/src/main/java/MVC/taghandlers/mvcbody.java
 /home/pedroeusebio/NetBeansProjects/Trabalho-loja/src/main/java/MVC/Contralador.java

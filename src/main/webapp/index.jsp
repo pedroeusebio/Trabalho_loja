@@ -1,31 +1,6 @@
-
+<%@taglib prefix="t" uri="/WEB-INF/tlds/tagDaLoja" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="source/css/mystyle.css">
-        <title>Predo Zébio</title>
-    </head>
-    <body>
-        <div id='container'>
-            <form id='myForm' method="GET" action="controlador">
-                <input id='inputid' type="hidden" name="Controlador" value="MVC.pagehandlers.index_Handler" />
-                <div id='divtitle'>
-                    <p id='title'>LOJA CANETAS BIC</p>
-                </div>
-                <div id='container-sidebar'>
-                    <ul>
-                        <li class='li1'><a href='index.jsp'><span>Products</span></a>
-                            <ul>
-                                <li id='p_link'><a href='controlador?Controlador=MVC.pagehandlers.index_Handler&PRODUTO=red'><span>Caneta Vermelha</span></a></li>
-                                <li id='p_link'><a href='controlador?Controlador=MVC.pagehandlers.index_Handler&PRODUTO=blue'><span>Caneta Azul</span></a></li>
-                                <li id='p_link'><a href='controlador?Controlador=MVC.pagehandlers.index_Handler&PRODUTO=black'><span>Caneta Preta</span></a></li>
-                            </ul>
-                        </li>
-                        <li class='li1'><a href='#'><span>About</span></a></li>
-                        <li class='li1'><a href='#'><span>Contact</span></a></li>
-                    </ul>
-                </div>
+<t:mvcbody handler="MVC.pagehandlers.index_Handler"  pageName="oi">
                 <div id='container-product'>
                     <table class='t_product'>
                         <tr>
@@ -43,7 +18,4 @@
                         </tr>
                     </table>
                 </div>
-            </form>
-        </div>
-    </body>
-</html>
+</t:mvcbody>
